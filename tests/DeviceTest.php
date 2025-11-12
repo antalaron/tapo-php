@@ -85,6 +85,7 @@ final class DeviceTest extends TestCase
             'getPowerData',
             'turnOff',
             'turnOn',
+            'getStatus',
             'refreshSession',
             'setBrightness',
             'setColor',

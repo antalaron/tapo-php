@@ -40,6 +40,9 @@ $device = new Device('192.168.1.100', 'your-email@example.com', 'your-password')
 echo 'Model: '.$device->getModel()."\n";
 echo 'Name: '.$device->getDeviceName()."\n";
 
+// Get device status (true = ON, false = off)
+echo 'Device is '.($device->getStatus() ? 'ON' : 'OFF')."\n";
+
 // Turn the device on
 $device->turnOn();
 

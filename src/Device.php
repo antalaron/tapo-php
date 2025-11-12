@@ -249,6 +249,13 @@ final class Device
         $this->setDeviceInfo(['device_on' => true]);
     }
 
+    public function getStatus(): bool
+    {
+        $info = $this->getDeviceInfo();
+
+        return $info['device_on'];
+    }
+
     public function refreshSession(): void
     {
         $this->ensureFeatureSupported('refresh_session');
